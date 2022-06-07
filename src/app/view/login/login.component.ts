@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
         alert(data.token)
       } else{
         alert("Exitoso")
+        location.href="dashboard"
       }
     })
   }
