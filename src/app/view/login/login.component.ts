@@ -10,7 +10,7 @@ import { LoginI } from 'src/app/modelos/login.inteface';
 })
 export class LoginComponent implements OnInit {
   loginForm = new FormGroup({
-    user : new FormControl('',Validators.required),
+    username : new FormControl('',Validators.required),
     password : new FormControl('',Validators.required)
   })
 
@@ -22,6 +22,11 @@ export class LoginComponent implements OnInit {
   onLogin(form: LoginI){
     this.api.login(form).subscribe(data=>{
       console.log(data)
+      if (data.token == "Credenciales incorrectas"){
+        alert(data.token)
+      } else{
+        alert("Exitoso")
+      }
     })
   }
 

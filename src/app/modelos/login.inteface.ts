@@ -1,5 +1,5 @@
 export interface LoginI{
-    user:string;
+    username:string;
     password:string;
     
 }

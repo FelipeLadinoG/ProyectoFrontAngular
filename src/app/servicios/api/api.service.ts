@@ -10,7 +10,9 @@ import { ResponceI } from 'src/app/modelos/response.interface';
 export class ApiService {
   url:string = 'http://localhost:8085/'
   constructor(private http:HttpClient) { }
+
   login(datos:LoginI):Observable<ResponceI>{ 
+    console.log(datos);
     let direccion = this.url + "api/auth/login";
     return this.http.post<ResponceI>(direccion, datos);
   }

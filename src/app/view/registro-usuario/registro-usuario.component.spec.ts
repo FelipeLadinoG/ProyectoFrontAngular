@@ -23,3 +23,5 @@ describe('RegistroUsuarioComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
