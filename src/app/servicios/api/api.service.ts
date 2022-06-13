@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs'
 import {LoginI} from 'src/app/modelos/login.inteface'
+import { RegisterI } from 'src/app/modelos/register.interface';
 import { ResponceI } from 'src/app/modelos/response.interface';
 
 @Injectable({
@@ -14,6 +15,12 @@ export class ApiService {
   login(datos:LoginI):Observable<ResponceI>{ 
     console.log(datos);
     let direccion = this.url + "api/auth/login";
+    return this.http.post<ResponceI>(direccion, datos);
+  }
+
+  register(datos:RegisterI):Observable<ResponceI>{
+    console.log(datos);
+    let direccion = this.url + "api/auth/register";
     return this.http.post<ResponceI>(direccion, datos);
   }
   

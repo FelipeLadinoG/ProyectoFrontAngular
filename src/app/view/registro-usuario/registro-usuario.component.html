@@ -7,28 +7,28 @@
     <div class="tab-content">  
         <h1>Registrarse</h1>
         
-        <form action="/" method="post">
+        <form [formGroup]="registerForm" (ngSubmit)="onRegister(registerForm.value)">
         
         <div class="top-row">
           <div class="field-wrap">
-            <input type="password" required autocomplete="off" placeholder="Contraseña*" />
+            <input type="password" required autocomplete="off" placeholder="Contraseña*" formControlName="contrasena" />
           </div>
       
           <div class="field-wrap">
-            <input type="email" formControlName="correo" required autocomplete="off" placeholder="Correo*"/>
+            <input type="email" formControlName="correo" required autocomplete="off" placeholder="Correo*" formControlName="correo" />
           </div>
         </div>
 
         <div class="field-wrap">
-          <input type="text"required autocomplete="off" placeholder="Dirección*"/>
+          <input type="text"required autocomplete="off" placeholder="Dirección*" formControlName="direccion"/>
         </div>
         
         <div class="field-wrap">
-          <input type="text"required autocomplete="off" placeholder="Nombre*"/>
+          <input type="text"required autocomplete="off" placeholder="Nombre*" formControlName="nombre"/>
         </div>
 
         <div class="field-wrap">
-            <input type="number"required autocomplete="off" placeholder="Teléfono*"/>
+            <input type="number"required autocomplete="off" placeholder="Teléfono*" formControlName="telefono"/>
           </div>
 
         <button href='#'type="submit" class="button button-block">Registrarse</button>
