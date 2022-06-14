@@ -1,1 +1,38 @@
-<p>editar-usuario works!</p>
+<div class="form">
+    <ul class="tab-group">
+    </ul>
+    
+    <div class="tab-content">  
+        <h1>Editar Usuario</h1>
+        
+        <form [formGroup]="registerForm" (ngSubmit)="onRegister(registerForm.value)">
+        
+        <div class="top-row">
+          <div class="field-wrap">
+            <input type="password" required autocomplete="off" placeholder="Contraseña*" formControlName="contrasena" />
+          </div>
+      
+          <div class="field-wrap">
+            <input type="email" formControlName="correo" required autocomplete="off" placeholder="Correo*" formControlName="correo" />
+          </div>
+        </div>
+
+        <div class="field-wrap">
+          <input type="text"required autocomplete="off" placeholder="Dirección*" formControlName="direccion"/>
+        </div>
+        
+        <div class="field-wrap">
+          <input type="text"required autocomplete="off" placeholder="Nombre*" formControlName="nombre"/>
+        </div>
+
+        <div class="field-wrap">
+            <input type="number"required autocomplete="off" placeholder="Teléfono*" formControlName="telefono"/>
+          </div>
+
+        <button href='#'type="submit" class="button button-block">Editar</button>
+        
+        </form>
+      
+    </div>
+    
+</div>
