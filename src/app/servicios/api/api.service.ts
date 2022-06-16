@@ -6,6 +6,9 @@ import { RegisterI } from 'src/app/modelos/register.interface';
 import { ResponceI } from 'src/app/modelos/response.interface';
 import { EditarUsuarioI } from 'src/app/modelos/editarUsuario.interface';
 import { ListaUsuariosI } from 'src/app/modelos/listaUsuarios.interface';
+import { ListaCiudadesI } from 'src/app/modelos/listaCiudades.interface';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -35,6 +38,11 @@ export class ApiService {
   listaUsuarios(page:number):Observable<ListaUsuariosI[]>{
     let direccion = this.url + "api/usuarios";
     return this.http.get<ListaUsuariosI[]>(direccion);
+  }
+
+  listaCiudades(page:number):Observable<ListaCiudadesI[]>{
+    let direccion = this.url + "api/ciudad/ciudades";
+    return this.http.get<ListaCiudadesI[]>(direccion);
   }
   
 }
