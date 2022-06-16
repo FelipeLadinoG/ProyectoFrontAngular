@@ -7,6 +7,7 @@ import { ResponceI } from 'src/app/modelos/response.interface';
 import { EditarUsuarioI } from 'src/app/modelos/editarUsuario.interface';
 import { ListaUsuariosI } from 'src/app/modelos/listaUsuarios.interface';
 import { ListaCiudadesI } from 'src/app/modelos/listaCiudades.interface';
+import { ListaEmpresasI } from 'src/app/modelos/listaEmpresas.interface';
 
 
 
@@ -43,6 +44,11 @@ export class ApiService {
   listaCiudades(page:number):Observable<ListaCiudadesI[]>{
     let direccion = this.url + "api/ciudad/ciudades";
     return this.http.get<ListaCiudadesI[]>(direccion);
+  }
+
+  listaEmpresas(page:number):Observable<ListaEmpresasI[]>{
+    let direccion = this.url + "api/empresaProveedora/EmpresaProveedoras";
+    return this.http.get<ListaEmpresasI[]>(direccion);
   }
   
 }
