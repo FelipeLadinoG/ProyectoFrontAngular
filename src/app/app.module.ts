@@ -14,6 +14,7 @@ import { CuadrillasComponent } from './view/cuadrillas/cuadrillas.component';
 import { EmpleadosComponent } from './view/empleados/empleados.component';
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
 import { DashboardProveedorComponent } from './view/dashboard-proveedor/dashboard-proveedor.component';
+import { RegistrarUsuarioAdminComponent } from './view/registrar-usuario-admin/registrar-usuario-admin.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardProveedorComponent } from './view/dashboard-proveedor/dashboar
     CuadrillasComponent,
     EmpleadosComponent,
     UsuariosComponent,
-    DashboardProveedorComponent
+    DashboardProveedorComponent,
+    RegistrarUsuarioAdminComponent
 
   ],
   imports: [

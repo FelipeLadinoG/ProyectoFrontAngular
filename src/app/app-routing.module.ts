@@ -7,6 +7,7 @@ import {EditarUsuarioComponent} from './view/editar-usuario/editar-usuario.compo
 import { CiudadesComponent } from './view/ciudades/ciudades.component';
 import { EmpresasComponent } from './view/empresas/empresas.component';
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
+import { DashboardProveedorComponent } from './view/dashboard-proveedor/dashboard-proveedor.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'login', pathMatch: 'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'dashboard', component:DashboardComponent},
   {path:'ciudades', component:CiudadesComponent},
   {path:'usuarios', component:UsuariosComponent},
-  {path:'empresas', component:EmpresasComponent}
+  {path:'empresas', component:EmpresasComponent},
+  {path:'dashboardProveedor', component:DashboardProveedorComponent}
 ];
 
 @NgModule({
