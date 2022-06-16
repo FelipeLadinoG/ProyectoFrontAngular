@@ -189,3 +189,26 @@ textarea {
   margin-top: -20px;
   text-align: right;
 }
+
+HTML CSSResult Skip Results Iframe
+EDIT ON
+/*Centers "button" in the middle of the page*/
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.fcc-btn {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.fcc-btn:hover {
+  background-color: #223094;
+}

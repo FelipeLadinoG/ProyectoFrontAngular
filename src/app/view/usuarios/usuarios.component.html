@@ -179,7 +179,7 @@
       <div class="page-wrapper">
         
         <div class="page-breadcrumb">
-          <a class="fcc-btn" href="https://www.freecodecamp.org/">Registrar Nuevo Usuario</a>
+          <a class="fcc-btn" href="registrar-usuario-admin">Registrar Nuevo Usuario</a>
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
               <div class="ms-auto text-end">
@@ -199,6 +199,43 @@
                 </head>
 
                 <div class="container">
+                  <style>
+                    .button {
+                      border: none;
+                      color: white;
+                      padding: 6px 22px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 16px;
+                      margin: 4px 2px;
+                      transition-duration: 0.4s;
+                      cursor: pointer;
+                    }
+                    
+                    .button1 {
+                      background-color: yellow;
+                      color: black;
+                      border: 2px solid yellow;
+                    }
+                    
+                    .button1:hover {
+                      background-color: yellow;
+                      color: yellow;
+                    }
+                    
+                    .button2 {
+                      background-color: red;
+                      color: black;
+                      border: 2px solid red;
+                    }
+                    
+                    .button2:hover {
+                      background-color: red;
+                      color: red;
+                    }
+                    
+                    </style>
                         <div class="row">
                             <div class="col">
                                 <table class="table table-striped table-bordered table-hover table-dark">
@@ -208,6 +245,8 @@
                                             <th>Dirección</th>
                                             <th>Nombre</th>
                                             <th>Teléfono</th>
+                                            <th>Editar</th>
+                                            <th>Eliminar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -216,6 +255,8 @@
                                             <td>{{ usuario.direccion }}</td>
                                             <td>{{ usuario.nombre }}</td>
                                             <td>{{ usuario.telefono }}</td>
+                                            <th (click)="eliminarUsuario(usuario.id)"><img src="assets/images/editar.png" width="30" height="30" style="float: left;margin-left: 15px" alt=""></th>
+                                            <th (click)="eliminarUsuario(usuario.id)"><img src="assets/images/eliminar.png" width="30" height="30" style="float: left;margin-left: 15px" alt=""></th>
                                         </tr>
                                     </tbody>
                                 </table>

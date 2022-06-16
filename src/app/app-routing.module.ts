@@ -8,6 +8,7 @@ import { CiudadesComponent } from './view/ciudades/ciudades.component';
 import { EmpresasComponent } from './view/empresas/empresas.component';
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
 import { DashboardProveedorComponent } from './view/dashboard-proveedor/dashboard-proveedor.component';
+import { RegistrarUsuarioAdminComponent } from './view/registrar-usuario-admin/registrar-usuario-admin.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'login', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'ciudades', component:CiudadesComponent},
   {path:'usuarios', component:UsuariosComponent},
   {path:'empresas', component:EmpresasComponent},
+  {path:'registrar-usuario-admin', component:RegistrarUsuarioAdminComponent},
   {path:'dashboardProveedor', component:DashboardProveedorComponent}
 ];
 

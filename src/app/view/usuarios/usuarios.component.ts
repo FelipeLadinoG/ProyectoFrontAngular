@@ -20,4 +20,13 @@ export class UsuariosComponent implements OnInit {
     })
   }
 
+  editarUsuario(id:string){
+    console.log(id);
+
+  }
+
+  eliminarUsuario(id:string){
+    console.log(id);
+  }
+
 }

@@ -184,6 +184,7 @@
           </div>
         </div>
           <div class="form">
+            <a class="fcc-btn" href="registrar-usuario-admin">Registrar Nueva Ciudad</a>
             <ul class="tab-group">
             </ul>
                 <head>
@@ -194,6 +195,7 @@
                 </head>
 
                 <div class="container">
+                  
                         <div class="row">
                             <div class="col">
                                 <table class="table table-striped table-bordered table-hover table-dark">
@@ -201,12 +203,17 @@
                                         <tr>
                                             <th>Id</th>
                                             <th>Nombre</th>
+                                            <th>Editar</th>
+                                            <th>Eliminar</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr *ngFor="let ciudad of ciudades">
                                             <td>{{ ciudad.id }}</td>
                                             <td>{{ ciudad.nombre }}</td>
+                                            <th><img src="assets/images/editar.png" width="30" height="30" style="float: left;margin-left: 15px" alt=""></th>
+                                            <th><img src="assets/images/eliminar.png" width="30" height="30" style="float: left;margin-left: 15px" alt=""></th>
                                         </tr>
                                     </tbody>
                                 </table>
