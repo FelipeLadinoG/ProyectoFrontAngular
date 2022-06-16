@@ -29,7 +29,6 @@ export class LoginComponent implements OnInit {
         alert(data.token)
       } else{
         alert("Exitoso")
-        localStorage.setItem("email",data.result);
         localStorage.setItem("token",data.token);
         location.href="dashboard"
       }
