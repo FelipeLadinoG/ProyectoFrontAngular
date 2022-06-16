@@ -502,26 +502,18 @@
                                 <table class="table table-striped table-bordered table-hover table-dark">
                                     <thead>
                                         <tr>
-                                            <th>Producto</th>
-                                            <th>Cantidad</th>
-                                            <th>Precio</th>
+                                            <th>Correo</th>
+                                            <th>Dirección</th>
+                                            <th>Nombre</th>
+                                            <th>Teléfono</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>Ratón</td>
-                                            <td>15</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Teclado</td>
-                                            <td>34</td>
-                                            <td>340</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pantalla</td>
-                                            <td>10</td>
-                                            <td>400</td>
+                                        <tr *ngFor="let usuario of usuarios">
+                                            <td>{{ usuario.correo }}</td>
+                                            <td>{{ usuario.direccion }}</td>
+                                            <td>{{ usuario.nombre }}</td>
+                                            <td>{{ usuario.telefono }}</td>
                                         </tr>
                                     </tbody>
                                 </table>

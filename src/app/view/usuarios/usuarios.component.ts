@@ -10,14 +10,13 @@ import { ListaUsuariosI } from 'src/app/modelos/listaUsuarios.interface';
   styleUrls: ['./usuarios.component.css']
 })
 export class UsuariosComponent implements OnInit {
-
-  usuarios: ListaUsuariosI[];
-
-  constructor(private api:ApiService,private router:Router) { }
+  usuarios!: ListaUsuariosI[];
+  constructor(private api:ApiService, private router:Router) { }
 
   ngOnInit(): void {
     this.api.listaUsuarios(1).subscribe(datos => {
       console.log(datos)
+      this.usuarios = datos;
     })
   }
 

@@ -6,5 +6,5 @@ export interface ListaUsuariosI {
     contrasena:string;
     telefono:string;
     direccion:string;
-    estado:boolean;
+    estado:boolean; 
 }
