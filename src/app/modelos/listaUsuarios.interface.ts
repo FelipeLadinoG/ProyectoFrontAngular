@@ -1,9 +1,10 @@
 export interface ListaUsuariosI {
     id:string;
-    contrasena:string;
-    correo:string;
-    direccion:string;
     id_rol:string;
     nombre:string;
+    correo:string;
+    contrasena:string;
     telefono:string;
+    direccion:string;
+    estado:boolean;
 }
