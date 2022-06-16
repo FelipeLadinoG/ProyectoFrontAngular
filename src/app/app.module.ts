@@ -13,6 +13,7 @@ import { EmpresasComponent } from './view/empresas/empresas.component';
 import { CuadrillasComponent } from './view/cuadrillas/cuadrillas.component';
 import { EmpleadosComponent } from './view/empleados/empleados.component';
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
+import { DashboardProveedorComponent } from './view/dashboard-proveedor/dashboard-proveedor.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UsuariosComponent } from './view/usuarios/usuarios.component';
     EmpresasComponent,
     CuadrillasComponent,
     EmpleadosComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    DashboardProveedorComponent
 
   ],
   imports: [
